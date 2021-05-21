@@ -159,7 +159,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("https://pix3.agoda.net/hotelimages/421/-1/d5c8ce1f6755ca71127d48387f1f72de.jpg")
+  background: url("https://media.cntraveler.com/photos/53dad07e6dec627b14a04855/master/w_1024,h_768,c_limit/four-seasons-bali-at-jimbaran-bay-bali-jimbaran-indonesia-108728-2.jpg")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -216,6 +216,10 @@ h6 {
   margin-bottom: 4rem;
 }
 .section-title h4 {
+  border-bottom: 3px solid var(--primaryColor);
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;

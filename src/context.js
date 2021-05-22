@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import items from "./data";
 const RoomContext = React.createContext();
-//  <RoomContext.Provider value={'hello}
+//  <RoomContext.Provider value={'hello'}
 
 class RoomProvider extends Component {
   state = {
@@ -33,9 +33,17 @@ class RoomProvider extends Component {
     });
     return tempItems;
   }
+
+  // Get Room
+  getRoom = (slug) => {
+    let tempRooms = [...this.state.rooms];
+    const room = tempRooms.find((room) => room.slug === slug);
+    return room;
+  };
+
   render() {
     return (
-      <RoomContext.Provider value={{ ...this.state }}>
+      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom }}>
         {this.props.children}
       </RoomContext.Provider>
     );

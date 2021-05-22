@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./Pages/Home";
-import Room from "./Pages/Room";
+import Rooms from "./Pages/Rooms";
 import SingleRoom from "./Pages/SingleRoom";
 import Error from "./Pages/Error";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/rooms/" component={Room} />
-        <Route exact path="/single-rooms/:slug" component={SingleRoom} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
     </div>

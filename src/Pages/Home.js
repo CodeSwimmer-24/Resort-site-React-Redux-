@@ -4,6 +4,7 @@ import Hero from "../Components/Hero/Hero";
 import { Link } from "react-router-dom";
 import Services from "../Components/Servicess/Services";
 import FeaturedRooms from "../Components/FeaturedRooms";
+
 function Home() {
   return (
     <>
